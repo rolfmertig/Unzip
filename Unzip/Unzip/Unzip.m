@@ -20,8 +20,8 @@
 
 (* :Installation:
 
-   This package can be invoked without local installation by 
-   Import["http://github.com/rolfmertig/Unzip/blob/master/Unzip/Unzip.m"] 
+   This package can be invoked without local installation by
+   Import["https://raw.githubusercontent.com/rolfmertig/Unzip/master/Unzip/Unzip/Unzip.m"]
    or
    Import["http://www.mertig.com/mathdepot/Unzip.m"] 
 
