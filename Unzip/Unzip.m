@@ -46,11 +46,12 @@ ClearAll[Unzip];
   
 Unzip::usage = "Unzip[zipfile, dir] unzips zipfile to dir. The directory dir should exist.
 Unzip[zipfile] is the same as Unzip[zipfile, $TemporaryDirectory].
-Unzip has an option Print. If set to PrintTemporary or Print, each extracted file is printed.";
+Unzip has an option Print. If set to PrintTemporary or Print, each extracted file is printed."
 
 Begin["`Private`"];
 
-Options[Unzip] = {CharacterEncoding :> $CharacterEncoding, Print -> PrintTemporary };
+Options[Unzip] = {CharacterEncoding :> $CharacterEncoding, Print -> PrintTemporary};
+	              
 
 Unzip[zipfilein_String, opts:OptionsPattern[]] :=
     Unzip[zipfilein, $TemporaryDirectory, opts];
